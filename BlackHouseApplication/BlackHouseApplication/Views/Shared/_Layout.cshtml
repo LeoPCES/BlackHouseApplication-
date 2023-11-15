@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BlackHouseApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-darkly.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BlackHouseApplication.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/bootstrap-icons.css" asp-append-version="true" />
+
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-bg-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/imagens/blackHouseLogo.jpg" widht="30" height="30" style="border-radius: 100% !important;" /> @*imagem do logo*@
+                    Black House
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">
+                                Inicio
+                                @* <span class="visually-hidden">(current)</span> *@
+                            </a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Agenda" asp-action="SelecionarBarbeiroServico">Agendar horário</a>
+                        </li>
+
+                        <li class="nav-item">
+                            @await Html.PartialAsync("_LoginPartial")
+                        </li>
+                        <li class="nav-item">
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <a class="nav-link text-light" asp-area="Admin" asp-controller="Admin" asp-action="index">Admin</a>
+                            }
+                        </li>                 
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-dark g-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-1 col-sm-1">
+                    <div class="icon-box">
+                        <a href="http://wa.me/5527997164405?text=Desejo%20agendar%20um%20horario" class="icon rodape-icon text-light"><i class="bx bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-1 col-sm-1">
+                    <a href="https://www.instagram.com/barbeariablackhouse_/" class="icon rodape-icon text-light"><i class="bx bi-instagram"></i></a>
+                </div>
+                <div class="col-1 col-sm-1">
+                    <a href="https://www.facebook.com/profile.php?id=100003056269620" class="icon rodape-icon text-light"><i class="bx bi-facebook"></i></a>
+                </div>
+                <div class="row">
+                    <div class="text-body-tertiary" style="text-align: center; font-size: 0.8rem">
+                        &copy;2023 - Black House
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+    <style>
+        .rodape-icon{
+            font-size: 2.0rem;
+            padding: 5px;
+            
+        }
+        
+    </style>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

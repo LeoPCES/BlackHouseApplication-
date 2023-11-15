@@ -1,0 +1,13 @@
+﻿@model IEnumerable<DateTime>
+
+@if (Model.Any())
+{
+    foreach (var horario in Model)
+    {
+        <p>@horario.ToString("HH:mm")</p>
+    }
+}
+else
+{
+    <p>Não há horários disponíveis neste dia.</p>
+}

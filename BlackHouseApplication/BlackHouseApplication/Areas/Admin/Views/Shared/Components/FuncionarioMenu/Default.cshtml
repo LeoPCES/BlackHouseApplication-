@@ -1,0 +1,15 @@
+﻿<div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        Consultar Agendamentos
+    </a>
+
+    <ul class="dropdown-menu">
+        @foreach (var funcionario in Model)
+        {
+            <li>
+                <a class="dropdown-item" asp-area="Admin" asp-controller="AdminConferirAgendamentos" asp-action="Lista" style="color:black"
+                   asp-route-id="@funcionario.FuncionarioId">@funcionario.FuncionarioNome</a>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BlackHouseApplication.Models.Servico>
+
+
+<h2>Servicos</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Criar novo servico</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoServico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecoServico)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoServico)
+            </td>
+            <td>
+                    R$@Html.DisplayFor(modelItem => item.PrecoServico)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ServicoId" class="btn btn-primary">Editar Servico</a>
+                    <a asp-action="Details" asp-route-id="@item.ServicoId" class="btn btn-primary">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.ServicoId" class="btn btn-primary">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

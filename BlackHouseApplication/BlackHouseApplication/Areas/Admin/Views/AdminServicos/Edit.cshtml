@@ -1,0 +1,32 @@
+﻿@model BlackHouseApplication.Models.Servico
+
+<h1>Edit</h1>
+
+<h4>Servico</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ServicoId" />
+            <div class="form-group">
+                <label asp-for="TipoServico" class="control-label"></label>
+                <input asp-for="TipoServico" class="form-control" />
+                <span asp-validation-for="TipoServico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrecoServico" class="control-label"></label>
+                <input asp-for="PrecoServico" class="form-control" />
+                <span asp-validation-for="PrecoServico" class="text-danger"></span>
+            </div>
+            <div class="form-group py-2">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-dark">Voltar para Lista</a>
+</div>
+

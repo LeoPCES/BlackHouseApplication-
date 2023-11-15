@@ -1,0 +1,149 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlackHouseApplication
+build_property.RootNamespace = BlackHouseApplication
+build_property.ProjectDir = C:\Users\leo_a\OneDrive\Área de Trabalho\Faculdade ADS\4 Semestre\Estagio Supervisionado\Trabalho\BlackHouseApplication\BlackHouseApplication\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\leo_a\OneDrive\Área de Trabalho\Faculdade ADS\4 Semestre\Estagio Supervisionado\Trabalho\BlackHouseApplication\BlackHouseApplication
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminConferirAgendamentos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25mZXJpckFnZW5kYW1lbnRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminConferirAgendamentos/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25mZXJpckFnZW5kYW1lbnRvc1xMaXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminFuncionarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5GdW5jaW9uYXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminFuncionarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5GdW5jaW9uYXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminFuncionarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5GdW5jaW9uYXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminFuncionarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5GdW5jaW9uYXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminFuncionarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5GdW5jaW9uYXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminServicos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5TZXJ2aWNvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminServicos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5TZXJ2aWNvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminServicos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5TZXJ2aWNvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminServicos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5TZXJ2aWNvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/AdminServicos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5TZXJ2aWNvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/Shared/Components/FuncionarioMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcRnVuY2lvbmFyaW9NZW51XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/Shared/_FuncionarioAgendamentoResumo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9GdW5jaW9uYXJpb0FnZW5kYW1lbnRvUmVzdW1vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Agenda/AgendamentoConfirmado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXEFnZW5kYW1lbnRvQ29uZmlybWFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Agenda/ConfirmarAgendamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXENvbmZpcm1hckFnZW5kYW1lbnRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Agenda/SelecionarBarbeiroServico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXFNlbGVjaW9uYXJCYXJiZWlyb1NlcnZpY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Agenda/SemHorarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXFNlbUhvcmFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Shared/_HorariosDisponiveis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib3Jhcmlvc0Rpc3Bvbml2ZWlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leo_a/OneDrive/Área de Trabalho/Faculdade ADS/4 Semestre/Estagio Supervisionado/Trabalho/BlackHouseApplication/BlackHouseApplication/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uo01eo9ovo

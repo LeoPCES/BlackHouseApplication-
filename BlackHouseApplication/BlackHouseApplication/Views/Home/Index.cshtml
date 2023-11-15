@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Pagina Inicial";
+}
+
+<div class="row g-0 wallpaperLogo" >
+   <div style="text-align: center">
+        <a href="https://www.instagram.com/barbeariablackhouse_/">
+            <img src="~/imagens/blackHouseLogo.jpg" width="150" height="150" class="img-logo" />
+        </a>
+       
+   </div>
+</div>
+<div class="row g-0 wallpaperParede">
+    <div style="text-align: center">
+        <h3 class="text-dark titulo" style="margin-top:15px">BARBEARIA BLACK HOUSE</h3>
+        <p class="text-danger titulo" style=""> AGENDE SEU HORÁRIO ON-LINE</p>
+        <div style="padding: 30px">
+            <a asp-area="" asp-controller="Agenda" asp-action="SelecionarBarbeiroServico" style="background: black; padding: 12px; border-radius: 20px; text-decoration: none; color: white">MARCAR HORÁRIO</a>
+        </div>
+        
+    </div>
+
+</div>
+<div class="g-0 wallpaperServicos">
+    <div class="container">
+        <div class="row">
+            <h3 style="text-align: center">SERVIÇOS</h3>
+            <div class="col-6 col-md-3">
+                <div style="text-align: center">
+                    <img src="./imagens/cabelo.jpg" width="150" height="150" class="imagens-cards" />
+                    <p class="card-subtitulo">CABELO</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div style="text-align: center">
+                    <img src="./imagens/barba.jpeg" width="150" height="150" class="imagens-cards" />
+                    <p class="card-subtitulo">BARBA</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div style="text-align: center">
+                    <img src="./imagens/sobrancelha-feminina.jpg" width="150" height="150" class="imagens-cards" />
+                    <p class="card-subtitulo">SOBRANCELHA</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div style="text-align: center">
+                    <img src="./imagens/variedades.jpg" width="150" height="150" class="imagens-cards" />
+                    <p class="card-subtitulo">VARIEDADES</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="g-0" style="background: white;">
+    <h2 class="text-dark" style="text-align: center; padding: 15px;">INSTAGRAM</h2>
+    <p class="text-secondary" style="text-align: center">Se liga no que está rolando em nossa barbearia </p>
+
+@*     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-9e103cf9-7530-436e-bca2-d044d0a8e8fa"></div> *@
+    <div class="embedsocial-hashtag" data-ref="fe8b893eaeee2a96a6c6c178e6fa2a3edd6d39a2"> <a class="feed-powered-by-es feed-powered-by-es-slider-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial <span>→</span> </a> </div> <script>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
+</div>
+
+<div class="g-0 bg-dark">
+    <div class="map-responsive">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.3100996700696!2d-40.355388488334924!3d-20.370100252086967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83ef68340f58d%3A0xf7cef922a0ba1546!2sR.%20%C3%81guia%20Branca%2C%2033%20-%20Vale%20Encantado%2C%20Vila%20Velha%20-%20ES%2C%2029113-070!5e0!3m2!1spt-BR!2sbr!4v1697478245157!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+
+
+
+<style>
+    .wallpaperLogo{
+        background-image: url("imagens/tijolo.jpg");
+        background-size: cover;
+        background-repeat: repeat-x;
+        height: auto;    
+        max-width: 100%;
+        min-width: 300px;       
+
+    }
+
+    .img-logo{
+        background-color: transparent !important;
+        margin: 60px;
+        object-fit:contain;
+        border-radius: 100% !important;
+        display: inline-block;     
+        box-shadow: 5px 4px 10px 3px black;
+    }
+    .img-logo:hover{
+        filter: brightness(130%) ;
+    }
+    .wallpaperParede{
+        background-image: url("imagens/parede-desenho.jpg");
+        background-repeat: repeat-x;
+        max-width: 100%;
+        min-width: 300px;
+        height: auto;
+    }
+    .titulo{
+        font-family: "Poppins", Sans-serif;
+        font-weight: 600;
+        letter-spacing: 0px;
+    }
+    .imagens-cards{
+        border-radius: 100% !important;
+        box-shadow: 4px 3px 4px 1px #363636;
+    }
+    .card-subtitulo{
+        text-align: center;
+        margin: 10px;
+    }
+    .wallpaperServicos{
+        background-image: url("imagens/servico-image.jpg");
+        height: auto;
+    }
+
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    .map-responsive iframe {
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         position: absolute;
+     }
+</style>
+

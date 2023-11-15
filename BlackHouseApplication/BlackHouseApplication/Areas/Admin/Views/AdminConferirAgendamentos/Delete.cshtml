@@ -1,0 +1,30 @@
+﻿@model BlackHouseApplication.Models.Agendamento
+
+
+<h2>Deletar</h2>
+
+<h3>Deseja mesmo excluir este Agendamento?</h3>
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClienteNome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClienteNome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TelefoneCliente)
+        </dt>
+        <dd class="col-sm-10">
+            R$@Html.DisplayFor(model => model.TelefoneCliente)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="AgendamentoId" />
+        <input type="submit" value="Deletar" class="btn btn-danger" />
+        <a asp-action="Lista" class="btn btn-dark">Voltar para Lista</a>
+    </form>
+</div>

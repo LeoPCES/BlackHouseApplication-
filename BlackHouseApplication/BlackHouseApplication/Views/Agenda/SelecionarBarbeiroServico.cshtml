@@ -1,0 +1,30 @@
+﻿@model BlackHouseApplication.ViewModels.AgendamentoViewModel
+
+<div class="container">
+    <div>
+        <form asp-action="SelecionarBarbeiroServico" class="col-md-6" style="margin: auto">
+
+            <div class="form-group">
+                <label asp-for="BarbeiroSelecionadoId">Selecione um Barbeiro:</label>
+                <select asp-for="BarbeiroSelecionadoId" asp-items="@(new SelectList(Model.Barbeiros, "FuncionarioId", "FuncionarioNome"))" class="form-control"></select>   
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ServicoSelecionadoId">Selecione um Serviço:</label>
+                <select asp-for="ServicoSelecionadoId" asp-items="@(new SelectList(Model.Servicos, "ServicoId", "TipoServicoComPreco"))" class="form-control"></select> 
+            </div>
+
+            <div class="form-group">
+                @* mudei aqui o DataAgendamento *@
+                <label asp-for="DataSelecionada">Data:</label>
+                <input asp-for="DataSelecionada" type="date" class="form-control" />      
+            </div>
+
+            <div class="form-group py-3">
+                <button type="submit" class="btn btn-success">Continuar</button>
+            </div> 
+        </form>
+    </div>
+
+</div>
+

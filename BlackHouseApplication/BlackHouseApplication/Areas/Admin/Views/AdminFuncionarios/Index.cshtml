@@ -1,0 +1,41 @@
+﻿@model IEnumerable<BlackHouseApplication.Models.Funcionario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Barbeiros</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-dark">Cadastrar novo barbeiro</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FuncionarioNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FuncionarioNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.FuncionarioId" class="btn btn-primary">Editar Barbeiro</a> 
+                    <a asp-action="Details" asp-route-id="@item.FuncionarioId" class="btn btn-primary">Detalhes</a> 
+                    <a asp-action="Delete" asp-route-id="@item.FuncionarioId" class="btn btn-primary">Deletar barbeiro</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

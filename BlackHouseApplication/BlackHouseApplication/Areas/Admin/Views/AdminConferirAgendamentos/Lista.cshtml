@@ -1,0 +1,16 @@
+﻿@model BlackHouseApplication.ViewModels.FuncionarioListaViewModel;
+
+
+<h2>Lista</h2>
+<hr/>
+
+<div class="container">
+    <div class="row">
+        @foreach (var agendamento in Model.Agendamentos)
+        {
+            // usando a partial view _FuncionarioAgendamentoResumo
+            <partial name="_FuncionarioAgendamentoResumo" for="@agendamento" />         
+        }
+    </div>
+
+</div>

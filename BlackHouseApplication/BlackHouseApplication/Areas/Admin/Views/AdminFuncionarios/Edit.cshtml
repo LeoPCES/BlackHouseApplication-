@@ -1,0 +1,74 @@
+﻿@model BlackHouseApplication.Models.Funcionario
+
+
+<h1>Editar</h1>
+
+<h4>Funcionario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" onsubmit="return validarTelefone(this.telefone)">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FuncionarioId" />
+            <div class="form-group">
+                <label asp-for="FuncionarioNome" class="control-label"></label>
+                <input asp-for="FuncionarioNome" class="form-control" />
+                <span asp-validation-for="FuncionarioNome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" id="telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+                <div class="error-message" id="error-message"></div>
+            </div>
+            <div class="form-group py-1">
+                <input type="submit" value="Salvar alterações" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Voltar para Lista</a>
+</div>
+
+<script>
+    /* VALIDACAO TELEFONE */
+    const telefoneInput = document.getElementById('telefone');
+    const errorMessage = document.getElementById('error-message');
+
+    telefoneInput.addEventListener('input', function () {
+        let telefone = this.value.replace(/\D/g, ''); // Remove todos os não-dígitos
+
+        if (telefone.length <= 2) {
+            telefone = `(${telefone}`;
+        } else if (telefone.length <= 7) {
+            telefone = `(${telefone.slice(0, 2)}) ${telefone.slice(2)}`;
+        } else if (telefone.length <= 11) {
+            telefone = `(${telefone.slice(0, 2)}) ${telefone.slice(2, 7)} - ${telefone.slice(7)}`;
+        } else {
+            telefone = `(${telefone.slice(0, 2)}) ${telefone.slice(2, 7)} - ${telefone.slice(7, 11)}`;
+        }
+
+        this.value = telefone;
+
+        if (telefone.length === 17) {
+            errorMessage.textContent = ''; // Nenhum erro, telefone válido
+        } else {
+            errorMessage.textContent = 'Telefone inválido. Por favor, insira um número válido.';
+        }
+    });
+</script>
+
+<script>
+    function validarTelefone(input) {
+        var telefone = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+        if (telefone.length !== 11) {
+            alert("O telefone deve conter exatamente 11 dígitos.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+

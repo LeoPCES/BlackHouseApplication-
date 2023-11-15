@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BlackHouseApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BlackHouseApplication.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/bootstrap-icons.css" asp-append-version="true" />
+
+
+</head>
+<body>
+    <header>
+         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-bg-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/imagens/blackHouseLogo.jpg" widht="30" height="30" style="border-radius: 100% !important;" /> 
+                    Black House
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="Admin" asp-controller="Admin" asp-action="Index">
+                                Admin                             
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminServicos" asp-action="Index">Servicos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminFuncionarios" asp-action="Index">Gerenciar Barbeiros</a>
+                        </li>
+
+                        @await Component.InvokeAsync("FuncionarioMenu")
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+    </header>
+    <div class="container">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-light py-2">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="row">
+                    <div class="text-body-tertiary" style="text-align: center; font-size: 0.8rem">
+                        &copy;2023 - Black House
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <style>
+        .rodape-icon {
+            font-size: 2.0rem;
+            padding: 5px;
+        }
+    </style>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

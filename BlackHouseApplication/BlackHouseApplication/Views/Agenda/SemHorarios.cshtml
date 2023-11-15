@@ -1,0 +1,10 @@
+﻿@model DateTime
+
+<div class="container">
+    <h2>Sem Horários Disponíveis</h2>
+    <p>Desculpe, mas não há horários disponíveis para agendamento em @Model.ToString("dd/MM/yyyy").</p>
+
+    <div>
+        <a asp-area="" asp-controller="Agenda" asp-action="SelecionarBarbeiroServico" class="btn btn-success">Reagendar horário</a>
+    </div>
+</div>

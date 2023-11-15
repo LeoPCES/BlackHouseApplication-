@@ -1,0 +1,102 @@
+﻿@model BlackHouseApplication.ViewModels.AgendamentoViewModel
+
+
+<div class="container">
+    <div>
+        <h2>Confirmar Agendamento</h2>
+        <form method="post" onsubmit="return validarTelefone(this.telefone) && validarNome(this.nome)" class="col-md-6" style="margin: auto" action="@Url.Action("ConfirmarAgendamentoPost", "Agenda")">
+            <input type="hidden" asp-for="BarbeiroSelecionadoId" />
+            <input type="hidden" asp-for="ServicoSelecionadoId" />
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <label asp-for="HorarioSelecionado">Selecione um Horário:</label>
+                <select asp-for="HorarioSelecionado" asp-items="@(new SelectList(Model.HorariosDisponiveis))" class="form-control"></select>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="ClienteNome">Nome:</label>
+                <input asp-for="ClienteNome" class="form-control" id="nome" />
+                <div class="error-message" id="error-message-nome">
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TelefoneCliente">Telefone:</label>
+                <input asp-for="TelefoneCliente" placeholder="(xx)xxxxx-xxxx" id="telefone" type="text" 
+                title="Digite um número de telefone válido" class="form-control" />
+                <div class="error-message" id="error-message"></div>
+            </div>
+
+
+            <div class="form-group py-3">
+                <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+            </div>          
+        </form>
+    </div>
+</div>
+
+<script> /* VALIDACAO TELEFONE */
+    const telefoneInput = document.getElementById('telefone');
+    const errorMessage = document.getElementById('error-message');
+
+    telefoneInput.addEventListener('input', function () {
+        let telefone = this.value.replace(/\D/g, ''); // Remove todos os não-dígitos
+
+        if (telefone.length <= 2) {
+            telefone = `(${telefone}`;
+        } else if (telefone.length <= 7) {
+            telefone = `(${telefone.slice(0, 2)}) ${telefone.slice(2)}`;
+        } else if (telefone.length <= 11) {
+            telefone = `(${telefone.slice(0, 2)}) ${telefone.slice(2, 7)} - ${telefone.slice(7)}`;
+        } else {
+            telefone = `(${telefone.slice(0, 2)}) ${telefone.slice(2, 7)} - ${telefone.slice(7, 11)}`;
+        }
+
+        this.value = telefone;
+
+        if (telefone.length === 17) {
+            errorMessage.textContent = ''; // Nenhum erro, telefone válido
+        } else {
+            errorMessage.textContent = 'Telefone inválido. Por favor, insira um número válido.';
+        }
+    });
+</script>
+
+<script>
+    function validarTelefone(input) {
+        var telefone = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+        if (telefone.length !== 11) {
+            alert("O telefone deve conter exatamente 11 dígitos.");
+            return false;
+        }
+        return true;
+    }
+</script> 
+
+<script> /* VALIDACAO NOME */
+    const nomeInput = document.getElementById('nome');
+    const errorMessageNome = document.getElementById('error-message-nome');
+
+    nomeInput.addEventListener('input', function () {
+        let nome = this.value;
+
+        if (nome.length >= 3) {
+            errorMessageNome.textContent = ''; // Nenhum erro, nome válido
+        } else {
+            errorMessageNome.textContent = 'Nome inválido. O campo deve conter pelo menos 3 caracteres.';
+        }
+    });
+</script>
+
+<script>
+    function validarNome(input) {
+        var nome = input.value;
+        if (nome.length < 3) {
+            alert("O nome deve conter pelo menos 3 caracteres.");
+            return false;
+        }
+        return true;
+    }
+</script>

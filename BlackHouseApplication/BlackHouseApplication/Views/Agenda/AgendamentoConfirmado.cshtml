@@ -1,0 +1,32 @@
+﻿@model BlackHouseApplication.Models.Agendamento
+
+<div class="container">
+    <h2>Agendamento Confirmado</h2>
+    <p>Agendado com sucesso!</p>
+
+    <dl class="row">
+        <dt class="col-sm-3">Data do Agendamento</dt>
+        <dd class="col-sm-9">@Model.DataAgendamento.ToString("g")</dd>
+
+        <dt class="col-sm-3">Nome do Cliente</dt>
+        <dd class="col-sm-9">@Model.ClienteNome</dd>
+
+        <dt class="col-sm-3">Telefone do Cliente</dt>
+        <dd class="col-sm-9">@Model.TelefoneCliente</dd>
+
+        <dt class="col-sm-3">Serviço</dt>
+        <dd class="col-sm-9">@Model.Servico.TipoServico</dd>
+
+        <dt class="col-sm-3">Valor do Serviço</dt>
+        <dd class="col-sm-9">@Model.Servico.PrecoServico.ToString("C2")</dd>
+
+        <dt class="col-sm-3">Barbeiro</dt>
+        <dd class="col-sm-9">@Model.Funcionario.FuncionarioNome</dd>
+
+        <div>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-success">Retornar à pagina inicial</a>
+        </div>
+
+
+    </dl>
+</div>
